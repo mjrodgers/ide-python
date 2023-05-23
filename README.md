@@ -4,6 +4,8 @@
 
 Python language support for [Atom-IDE](https://atom-ide-community.github.io), powered by the [Python language server](https://github.com/palantir/python-language-server).
 
+This package was forked from the atom-community version, it has had the (nonfunctioning) debugger removed so it will now install on Pulsar-edit.
+
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
 
 ## Requirements

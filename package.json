@@ -1,7 +1,7 @@
 {
   "name": "pulsar-ide-python",
   "main": "./lib/main",
-  "version": "1.9.8",
+  "version": "0.0.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
@@ -22,7 +22,7 @@
     "language-server-protocol",
     "language-client"
   ],
-  "repository": "https://github.com/mjrodgers/ide-python",
+  "repository": "https://github.com/mjrodgers/pulsar-ide-python",
   "license": "MIT",
   "engines": {
     "atom": ">=1.21.0 <2.0.0"

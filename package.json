@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "1.9.0",
+  "version": "1.9.3",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
@@ -27,8 +27,16 @@
   "engines": {
     "atom": ">=1.21.0 <2.0.0"
   },
+  "scripts": {
+    "format": "prettier --write .",
+    "test.format": "prettier . --check",
+    "lint": "eslint . --fix",
+    "test.lint": "eslint .",
+    "test": "apm test"
+  },
   "dependencies": {
-    "atom-languageclient": "^1.10.0"
+    "atom-languageclient": "^1.12.1",
+    "which": "^2.0.2"
   },
   "devDependencies": {
     "mock-spawn": "0.2.6",
@@ -47,6 +55,12 @@
       "type": "string",
       "default": "python",
       "description": "Absolute path of your Python binary. This is used to launch the Python language server. Make sure to install `pyls` for this version of Python. Changes will take effect after a restart of the language server. Use `$PIPENV_PATH/bin/python` if you want to use the pipenv path of your project"
+    },
+    "pyls": {
+      "title": "Path to pyls executable",
+      "order": 2,
+      "type": "string",
+      "default": "pylsp"
     },
     "pylsConfigurationSources": {
       "order": 2,

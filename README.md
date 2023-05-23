@@ -2,7 +2,7 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/ide-python.svg)](https://greenkeeper.io/)
 
-Python language support for [Atom-IDE](https://atom-ide-community.github.io), powered by the [Python language server](https://github.com/palantir/python-language-server). 
+Python language support for [Atom-IDE](https://atom-ide-community.github.io), powered by the [Python language server](https://github.com/palantir/python-language-server).
 
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
 
@@ -12,7 +12,7 @@ Python language support for [Atom-IDE](https://atom-ide-community.github.io), po
 
 ### Important
 
-Please note that `atom-ide-ui` is now deprecated, therefore, you must use the packages supplied from `atom-ide-community` as mentioned above. Links are also provided for more information.  
+Please note that `atom-ide-ui` is now deprecated, therefore, you must use the packages supplied from `atom-ide-community` as mentioned above. Links are also provided for more information.
 
 ## Feature Providers
 

@@ -1,16 +1,18 @@
-# IDE-python package
+# pulsar-IDE-python package
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/ide-python.svg)](https://greenkeeper.io/)
 
-Python language support for [Atom-IDE](https://atom-ide-community.github.io), powered by the [Python language server](https://github.com/palantir/python-language-server).
+Python language support for [Pulsar-edit](https://pulsar-edit.dev) (and [Atom-IDE](https://atom-ide-community.github.io)), powered by the [Python LSP server](https://github.com/python-lsp/python-lsp-server).
 
-This package was forked from the atom-community version, it has had the (nonfunctioning) debugger removed so it will now install on Pulsar-edit.
+This package has had the debugging features removed from the atom-community version, these seemed to no longer be functioning in Atom 1.60.0, and were preventing the package from loading in Pulsar-edit.
 
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
 
 ## Requirements
 
-[`ide-python`](https://atom.io/packages/ide-python) requires [Atom `1.21+`](https://atom.io/), [Python language server `0.29+`](https://github.com/palantir/python-language-server) and the [`atom-ide-base`](https://atom.io/packages/atom-ide-base) package to expose the functionality within Atom.
+[`pulsar-ide-python`](https://atom.io/packages/ide-python) requires either [Pulsar-edit](https://pulsar-edit.dev) or [Atom `1.21+`](https://atom.io/), a [Python language server](https://github.com/python-lsp/python-lsp-server), and the [`atom-ide-base`](https://atom.io/packages/atom-ide-base) package to expose the functionality within Atom.
+
+pylsp
 
 ### Important
 
@@ -36,31 +38,30 @@ Please note that `atom-ide-ui` is now deprecated, therefore, you must use the pa
 Install the language server (0.29.0 or newer) with:
 
 ```bash
-python -m pip install 'python-language-server[all]'
+python -m pip install 'python-lsp-server[all]'
 ```
 
-This command will install the language server and all supported feature providers, which can be enabled or disabled in the settings. Checkout the [official installation instructions](https://github.com/palantir/python-language-server#installation) on how to install only the providers you need.
+This command will install the language server and all supported feature providers, which can be enabled or disabled in the settings. Checkout the [official installation instructions](https://github.com/python-lsp/python-lsp-server#installation) on how to install only the providers you need.
 
-You can verify that everything is correctly installed by running `python -m pyls --help` from the command line.
+You can verify that everything is correctly installed by running `python -m pylsp --help` from the command line.
 It should return
 
 ```bash
-usage: pyls [-h] [--tcp] [--host HOST] [--port PORT]
-            [--log-config LOG_CONFIG | --log-file LOG_FILE] [-v]
+usage: pylsp [-h] [--tcp] [--ws] [--host HOST] [--port PORT] [--check-parent-process] [--log-config LOG_CONFIG | --log-file LOG_FILE] [-v] [-V]
 
 Python Language Server
 ...
 ```
 
-If you have installed `pyls` using a non default installation of Python, you can add modify the _Python Executable_ config in the `ide-python` settings.
+If you have installed `pylsp` using a non default installation of Python, you can add modify the _Python Executable_ config in the `ide-python` settings.
 
 ### Atom Package
 
-Install `ide-python` and [`atom-ide-base`](https://atom.io/packages/atom-ide-base) from _Install_ in Atom's settings or run:
+Install `ide-python` and [`atom-ide-base`](https://web.pulsar-edit.dev/packages/pulsar-ide-python) from _Install_ in Pulsar's settings or run:
 
 ```bash
-apm install atom-ide-base
-apm install ide-python
+ppm install atom-ide-base
+ppm install ide-python
 ```
 
 ## Configuration
@@ -74,7 +75,7 @@ Overall configuration is computed first from user configuration (in home directo
 
 ## Contributing
 
-Always feel free to help out! Whether it's [filing bugs and feature requests](https://github.com/lgeiger/ide-python/issues/new) or working on some of the [open issues](https://github.com/lgeiger/ide-python/issues), Atom's [guide for contributing to packages](https://github.com/atom/atom/blob/master/docs/contributing-to-packages.md) will help get you started.
+Always feel free to help out! Whether it's [filing bugs and feature requests](https://github.com/mjrodgers/ide-python/issues/new) or working on some of the [open issues](https://github.com/mjrodgers/ide-python/issues).
 
 ## License
 

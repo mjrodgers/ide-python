@@ -1,7 +1,7 @@
 {
   "name": "pulsar-ide-python",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "1.9.8",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",

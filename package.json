@@ -35,13 +35,15 @@
     "test": "apm test"
   },
   "dependencies": {
-    "atom-languageclient": "^1.12.1",
+    "atom-languageclient": "^1.14.1",
     "which": "^2.0.2"
   },
   "devDependencies": {
     "mock-spawn": "0.2.6",
-    "prettier": "^2.2.1"
+    "prettier-config-atomic": "^2.0.5",
+    "eslint-config-atomic": "^1.16.2"
   },
+  "prettier": "prettier-config-atomic",
   "enhancedScopes": [
     "source.python"
   ],

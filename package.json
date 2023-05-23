@@ -31,7 +31,8 @@
     "atom-languageclient": "^1.10.0"
   },
   "devDependencies": {
-    "mock-spawn": "0.2.6"
+    "mock-spawn": "0.2.6",
+    "prettier": "^2.2.1"
   },
   "enhancedScopes": [
     "source.python"

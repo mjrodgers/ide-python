@@ -1,7 +1,7 @@
 {
   "name": "ide-python",
   "main": "./lib/main",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Python language support for Atom-IDE",
   "keywords": [
     "ide",
@@ -394,6 +394,26 @@
               "type": "boolean",
               "default": true,
               "description": "Enable or disable PyFlakes."
+            }
+          }
+        },
+        "pyls_mypy": {
+          "title": "MyPy",
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "title": "Enabled",
+              "type": "boolean",
+              "order": 1,
+              "default": true,
+              "description": "Enable or disable MyPy."
+            },
+            "live_mode": {
+              "title": "Live mode",
+              "type": "boolean",
+              "order": 1,
+              "default": true,
+              "description": "Turn on live mode. If disabled, mypy linters on file save. Note: Linting on file save may not work on all machines."
             }
           }
         },

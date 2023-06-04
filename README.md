@@ -1,22 +1,24 @@
 # pulsar-IDE-python package
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lgeiger/ide-python.svg)](https://greenkeeper.io/)
 
-Python language support for [Pulsar-edit](https://pulsar-edit.dev) (and [Atom-IDE](https://atom-ide-community.github.io)), powered by the [Python LSP server](https://github.com/python-lsp/python-lsp-server).
+Python language support for [Pulsar-edit](https://pulsar-edit.dev) (and [Atom](https://github.com/atom/atom)), powered by the [Python LSP server](https://github.com/python-lsp/python-lsp-server).
 
-This package has had the debugging features removed from the atom-community version, these seemed to no longer be functioning in Atom 1.60.0, and were preventing the package from loading in Pulsar-edit.
+The Atom IDE-Python package has had a convoluted history, unfortunately the fall of Atom and rise of Pulsar-edit has resulted in a lot of packages no longer being maintained. The original version of the gives a "cannot be activated" error on the final release versions of Atom and all versions of Pulsar.
+
+In this fork, the code supporting the debugger feature have been removed (I don't think the debugger was functioning anyway). It now installs and functions properly in the latest versions of Pulsar.
 
 ![ide-python](https://user-images.githubusercontent.com/13285808/30352538-b9687a76-9820-11e7-8876-c22751645d36.png)
 
 ## Requirements
 
-[`pulsar-ide-python`](https://atom.io/packages/ide-python) requires either [Pulsar-edit](https://pulsar-edit.dev) or [Atom `1.21+`](https://atom.io/), a [Python language server](https://github.com/python-lsp/python-lsp-server), and the [`atom-ide-base`](https://atom.io/packages/atom-ide-base) package to expose the functionality within Atom.
+The [`pulsar-ide-python`](https://atom.io/packages/ide-python) package requires either [Pulsar-edit](https://pulsar-edit.dev) or [Atom `1.60+`](https://github.com/atom/atom), a [Python language server](https://github.com/python-lsp/python-lsp-server), and the [`atom-ide-base`](https://github.com/atom-community/atom-ide-base) package to expose the functionality within Pulsar/Atom.
 
-pylsp
 
 ### Important
 
-Please note that `atom-ide-ui` is now deprecated, therefore, you must use the packages supplied from `atom-ide-community` as mentioned above. Links are also provided for more information.
+Please note that `atom-ide-ui` is now deprecated, therefore, you must use the `atom-ide-base` packages supplied from `atom-ide-community` as mentioned above.
+
+It is also advised to use the `pylsp` language server for Python, instead of the similarly names `pyls` language server, which is now deprecated.
 
 ## Feature Providers
 
@@ -55,13 +57,13 @@ Python Language Server
 
 If you have installed `pylsp` using a non default installation of Python, you can add modify the _Python Executable_ config in the `ide-python` settings.
 
-### Atom Package
+### Pulsar Package
 
 Install `ide-python` and [`atom-ide-base`](https://web.pulsar-edit.dev/packages/pulsar-ide-python) from _Install_ in Pulsar's settings or run:
 
 ```bash
 ppm install atom-ide-base
-ppm install ide-python
+ppm install pulsar-ide-python
 ```
 
 ## Configuration

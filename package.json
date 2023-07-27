@@ -36,11 +36,11 @@
   },
   "dependencies": {
     "atom-languageclient": "^1.14.1",
-    "which": "^2.0.2"
+    "which": "^3.0.1"
   },
   "devDependencies": {
-    "mock-spawn": "0.2.6",
     "eslint-config-atomic": "^1.16.2",
+    "mock-spawn": "0.2.6",
     "prettier": "^2.2.1"
   },
   "enhancedScopes": [

@@ -35,7 +35,7 @@
     "test": "apm test"
   },
   "dependencies": {
-    "atom-languageclient": "^1.14.1",
+    "@savetheclocktower/atom-languageclient": "^1.17.5",
     "which": "^3.0.1"
   },
   "devDependencies": {
@@ -699,6 +699,12 @@
     "outline-view": {
       "versions": {
         "0.1.0": "provideOutlines"
+      }
+    },
+    "refactor": {
+      "versions": {
+        "0.1.0": "provideRefactor",
+        "0.2.0": "provideRefactorWithPrepare"
       }
     }
   }

@@ -39,7 +39,7 @@
     "which": "^3.0.1"
   },
   "devDependencies": {
-    "eslint-config-atomic": "^1.16.2",
+    "eslint-config-atomic": "^1.22.1",
     "mock-spawn": "0.2.6",
     "prettier": "^2.2.1"
   },

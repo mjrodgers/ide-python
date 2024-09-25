@@ -696,6 +696,11 @@
         "0.1.0": "provideFindReferences"
       }
     },
+    "intentions:list": {
+      "versions": {
+        "1.0.0": "provideIntentionsList"
+      }
+    },
     "outline-view": {
       "versions": {
         "0.1.0": "provideOutlines"
@@ -705,6 +710,11 @@
       "versions": {
         "0.1.0": "provideRefactor",
         "0.2.0": "provideRefactorWithPrepare"
+      }
+    },
+    "symbol.provider": {
+      "versions": {
+        "1.0.0": "provideSymbols"
       }
     }
   }

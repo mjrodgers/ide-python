@@ -35,7 +35,7 @@
     "test": "apm test"
   },
   "dependencies": {
-    "@savetheclocktower/atom-languageclient": "^1.17.5",
+    "@savetheclocktower/atom-languageclient": "^1.17.11",
     "which": "^3.0.1"
   },
   "devDependencies": {
